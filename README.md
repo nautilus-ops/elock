@@ -9,6 +9,12 @@
 
 > A lightweight distributed lock implementation built on top of etcd using leases and watch
 
+### Install
+
+```bash
+cargo add elock
+```
+
 ### Example
 You can new a `LockManager` to manage etcd locks.
 
