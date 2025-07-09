@@ -2,5 +2,17 @@
 name = "elock"
 version = "0.1.0"
 edition = "2024"
+authors = ["CeerDecy <CeerDecy@163.com>"]
+description = "A lightweight distributed lock implementation built on top of etcd using leases and watch"
+license = "MIT"
+repository = "https://github.com/nautilus-ops/elock"
+readme = "README.md"
+keywords = ["distributed-lock", "etcd", "rust"]
+categories = ["concurrency", "network-programming"]
 
 [dependencies]
+etcd-client = { version = "0.15.0", features = ["tls"] }
+tokio = {version = "1.46.1", features = ["full"]}
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.19", features = ["env-filter"] }
+tokio-util = "0.7.15"
