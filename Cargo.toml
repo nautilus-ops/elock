@@ -1,6 +1,6 @@
 [package]
 name = "elock"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 authors = ["CeerDecy <CeerDecy@163.com>"]
 description = "A lightweight distributed lock implementation built on top of etcd using leases and watch"

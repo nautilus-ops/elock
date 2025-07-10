@@ -6,6 +6,7 @@ use tokio_util::sync::CancellationToken;
 
 const DEFAULT_TTL: i64 = 10;
 
+#[derive(Default)]
 pub struct LockManager {
     client: Option<Client>,
     endpoint: String,
